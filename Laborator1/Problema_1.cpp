@@ -13,13 +13,13 @@ int main() {
     int sum=0;
     char line[100];
     FILE *fp;
-    fp = fopen("input.txt", "r");
+    fp = fopen("in.txt", "r");
     while (fgets(line, sizeof(line), fp)) {
         int number = string_to_int(line);
         sum += number;
     }
-fclose(fp);
-printf("Suma este: %d",sum);
-return 0;
+    fclose(fp);
+    printf("Suma este: %d",sum);
+    return 0;
 }
 
